@@ -1,0 +1,121 @@
+@import "Ginkgo";
+@import "bootstrap/bootstrap";
+
+* {
+  &, &:after, &:before {
+    vertical-align: middle;
+    @include box-sizing(border-box);
+    @include font-smoothing(subpixel-antialiased);
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  color: rgba(90, 90, 90, 1.00);
+
+  font-size: medium;
+  text-align: center;
+
+  font-family:"Roboto", "Noto Sans TC", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  
+  // 文字染色，背景色、文字色
+  @include selection(rgba(120, 186, 255, 1.00), rgba(255, 255, 255, 1));
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  text-decoration: none !important;
+
+  &:after,
+  &:before {
+    color: black;
+    vertical-align: middle !important;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button, select{
+  outline: none !important;
+  box-shadow: none !important;
+  border-width: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.mobile-open {
+  display: none !important;
+  @include range-width(0, 770px) {
+    display: inline-block !important;
+  }
+}
+
+.mobile-close {
+  @include range-width(0, 770px) {
+    display: none !important;
+  }
+}
+
+.mainBoxs {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  @include media-breakpoint-down(lg) {
+    width: 95%;
+  }
+
+  @include media-breakpoint-between(xl, xxl) {
+    width: 90%;
+  }
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+}
+
+.bigbanner {
+  display: inline-block;
+  width: 100%;
+
+  > img {
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+
+    @include media-breakpoint-down(md) {
+      height: 10rem;
+      object-position: 65% top;
+    }
+  } 
+}
+
+
+
+
+
