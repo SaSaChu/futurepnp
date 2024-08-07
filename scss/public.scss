@@ -1,6 +1,8 @@
 @import "Ginkgo";
 @import "bootstrap/bootstrap";
 
+$mainColor: #9fc6e3;
+
 * {
   &, &:after, &:before {
     vertical-align: middle;
@@ -85,7 +87,7 @@ img {
   max-width: 1200px;
 
   @include media-breakpoint-down(lg) {
-    width: 95%;
+    width: 98%;
   }
 
   @include media-breakpoint-between(xl, xxl) {
@@ -97,22 +99,76 @@ header {
   display: inline-block;
   width: 100%;
   padding: 20px;
+
+  @include media-breakpoint-down(md) {
+    padding: 15px 10px;
+  }
 }
 
 .bigbanner {
   display: inline-block;
   width: 100%;
+  position: relative;
 
-  > img {
+  .bannerTitle {
+    display: inline-block;
+    width: 90%;
+    position: absolute;
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: left;
+    color: white;
+  }
+
+  .bigimg {
     display: inline-block;
     width: 100%;
     object-fit: cover;
+  }
+}
 
-    @include media-breakpoint-down(md) {
-      height: 10rem;
-      object-position: 65% top;
-    }
-  } 
+
+
+// text+color+bg
+.listicon {
+  display: inline-block;
+  font-size: 2rem;
+  color: $mainColor;
+}
+
+
+
+// boo
+.nav-link {
+  color: #383a37;
+
+  &:hover, &:focus, &.active {
+    color: $mainColor;
+  }
+
+  &.mobile-link {
+    font-size: 1.3rem;
+    color: $mainColor;
+  }
+}
+
+.offcanvas-header {
+  padding: 15px !important;
+}
+
+.offcanvas-top {
+  height: fit-content;
+}
+
+.offcanvas-body {
+  padding: 0 0.5rem 1rem 0.5rem !important;
+}
+
+
+
+// 刪除
+.testboard {
+  border: 1px solid rgba(255, 0, 0, .3);
 }
 
 

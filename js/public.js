@@ -1,11 +1,10 @@
 
 $(function() {
 	
-	var myModal = document.getElementById('myModal')
-	var myInput = document.getElementById('myInput')
+	 $('.modus-img, .modus-img-my').imgLiquid ();
 
-	myModal.addEventListener('shown.bs.modal', function () {
-	  myInput.focus()
-	});
+  var myModal = document.getElementById('myModal')
+  var myInput = document.getElementById('myInput')
+
 
 });
