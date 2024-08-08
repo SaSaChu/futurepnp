@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+    <title></title>
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/public.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    
+
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="mainBoxs">
+        <div class="row mx-auto align-items-center justify-content-between">
+          <div class="col-md-2 col-4 px-0" >
+            <img src="images/logo.png" class="img-fluid">
+          </div>
+          <!-- 網頁版menu -->
+          <div class="col-md-10 mobile-close">
+            <ul class="nav justify-content-start">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="experts.html">Experts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="careers.html">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contat.html">Contat us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-7 px-0 mobile-open"><i class="listicon bi bi-list float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 手機版menu -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <div class="row mx-auto align-items-center justify-content-between">
+          <div class="col-4 px-0" >
+            <img src="images/logo.png" class="img-fluid">
+          </div>
+          <div class="col-3">
+           <button type="button" class="btn-close text-reset float-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <nav class="nav flex-column">
+          <a class="nav-link mobile-link" aria-current="page" href=" active">About</a>
+          <a class="nav-link mobile-link" href="product.html">Product</a>
+          <a class="nav-link mobile-link" href="experts.htm">Experts</a>
+          <a class="nav-link mobile-link" href="careers.html">Careers</a>
+          <a class="nav-link mobile-link" href="contat.html">Contat us</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 大Banner -->
+    <div class="bigbanner mb-5">
+      <div class="bannerbox top-50 start-50 translate-middle">
+        <p class="bannerTitle lh-sm">
+          A hub connecting</br>experts and clients
+        </p>
+      </div>
+      <picture>
+        <source srcset="images/experts-m.png" media="(max-width: 450px)">
+        <source srcset="images/experts-m.png" media="(max-width: 768px)">
+        <img class="bigimg" src="images/experts.png">
+      </picture>
+    </div>
+
+    <!-- 中間內容 -->
+    <main>
+      <!-- 01 -->
+      <div class="bg-blue py-5 mt-5">
+        <div class="mainBoxs">
+          <div class="row mx-auto text-md-start text-center px-0 align-items-center">
+            <div class="col-md-7 col-12 mb-3 pe-md-5 pe-4 order-md-first order-last">
+              <p class="f40-b-black lh-sm mb-md-5 mb-4">What does Futurepnp do?</p>
+              <p class="f30-black lh-sm">As our clients' trusted partner, we identify and engage professionals with deep expertise in specific industries, technologies or other domains, who help inform our clients' decisions.</br>
+              Connects individuals who want to utilize their business insights with companies that are looking for new business opportunities and business improvement tips.</p>
+            </div>
+            <div class="col-md-5 col-12 my-5 ps-md-5 ps-4">
+              <img src="images/experts-1.png" class="img-fluid">
+            </div>
+           
+          </div>
+        </div>
+      </div>
+
+      <div class="mainBoxs my-md-5 my-4">
+        <!-- 02 -->
+        <div class="row mx-auto text-md-start text-center px-0 align-items-center pb-5 pt-md-5 pt-0">
+          <div class="col-md-5 col-12 my-5 pe-md-5 pe-4">
+            <img src="images/experts-2.jpg" class="img-fluid">
+          </div>
+          <div class="col-md-7 col-12 ps-md-5 ps-4">
+            <p class="f40-b-black lh-sm mb-md-5 mb-4">Who are Futurepnp experts?</p>
+            <p class="f30-black lh-sm">Experts range from business executives, to industry professionals who deeply familiar with the products or services of companies that our clients care about.</br>
+            The knowledge of individuals with experience in various industries and operations contributes to the creation of innovations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="row mx-auto px-0 justify-content-center mt-5">
+        <div class="col-12 text-md-start text-center">
+          <div class="mainBoxs">
+            <p class="f40-b-black lh-sm my-md-5 my-4">What is the process?</p>
+            <p class="f30-black lh-sm">If our team has contacted with you, we believe that you are the expert who is the client looking for.</br>
+            We will share details of the project scope, and check for any potential conflicts of interest. Confirm your willingness and address any questions you may have. We will also introduce our terms of collaboration to you. Make it easy for experts to share knowledge and power progress.</p>
+          </div>
+        </div>
+        <div class="col-12 my-5 py-5">
+            <div class="row mx-auto mainBoxs g-5">
+              <div class="col-md-7 col-12 order-md-first order-last">
+                <div><img src="images/experts-3.jpg" class="img-fluid"></div>
+              </div>
+              <div class="col-md-5 col-12">
+                <div><img src="images/experts-4.jpg" class="img-fluid"></div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="mainBoxs">
+        <div class="row mx-auto">
+          <div class="col-md-9 col-12 px-0 text-md-start text-center">
+            <img src="images/logo.png" class="footerimg mb-4">
+            <p class="f15-blue d-block">Tel：+886-2-2721-8262</p>
+            <p class="f15-blue d-block">Email：<a href="mailto:service@futurepnp.com">service@futurepnp.com</a></p>
+            <p class="f15-blue d-block">Address：Rm. 7, 11F., No 205, Sec. 1 Dunhaua S Rd., Da' an Dist., Taipei City 106446, Taiwan(R.O.C.)</p>
+          </div>
+          <div class="col-3 px-0 text-start mobile-close">
+            <nav class="nav flex-column">
+              <a class="nav-link footer-link" aria-current="page" href=" active">About</a>
+              <a class="nav-link footer-link" href="product.html">Product</a>
+              <a class="nav-link footer-link" href="experts.htm">Experts</a>
+              <a class="nav-link footer-link" href="careers.html">Careers</a>
+              <a class="nav-link footer-link" href="contat.html">Contat us</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 外部引入js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script> 
+
+  </body>
+</html>
