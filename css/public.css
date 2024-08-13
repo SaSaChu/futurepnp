@@ -3041,11 +3041,13 @@ footer { display: inline-block; width: 100%; padding: 20px; }
 .bigbanner { display: inline-block; width: 100%; position: relative; }
 .bigbanner .bannerbox { display: inline-block; width: 100%; max-width: 1200px; position: absolute; }
 @media (max-width: 991.98px) { .bigbanner .bannerbox { width: 90%; } }
-.bigbanner .bannerbox .bannerTitle { font-size: 5rem; font-weight: bolder; text-align: left; color: white; }
+.bigbanner .bannerbox .bannerTitle { font-size: 4rem; font-weight: bolder; text-align: left; color: white; }
 @media (max-width: 991.98px) { .bigbanner .bannerbox .bannerTitle { font-size: 1.875rem; } }
 .bigbanner .bannerbox .bannertext { font-size: 2.5rem; text-align: left; color: white; }
 @media (max-width: 991.98px) { .bigbanner .bannerbox .bannertext { font-size: .9375rem; } }
 .bigbanner .bigimg { display: inline-block; width: 100%; object-fit: cover; }
+
+.img-logo { display: inline-block; width: 100%; max-width: 120px; }
 
 .footerimg { display: inline-block; width: 100%; max-width: 150px; }
 
@@ -3078,6 +3080,9 @@ footer { display: inline-block; width: 100%; padding: 20px; }
 .f30-b-black { font-size: 1.8rem; font-weight: bolder; }
 @media (max-width: 991.98px) { .f30-b-black { font-size: .9375rem; } }
 
+.f34-b-black { font-size: 2.2rem; font-weight: bolder; }
+@media (max-width: 991.98px) { .f34-b-black { font-size: 1rem; } }
+
 .f30-b-blue { font-size: 1.8rem; font-weight: bolder; color: #46a3e6; }
 @media (max-width: 991.98px) { .f30-b-blue { font-size: .9375rem; } }
 
@@ -3106,6 +3111,9 @@ footer { display: inline-block; width: 100%; padding: 20px; }
 .btn-line { display: inline-block; padding: 8px 15px; border: 1px solid black; font-size: 1.6rem; }
 @media (max-width: 991.98px) { .btn-line { font-size: .9375rem; } }
 .btn-line:hover, .btn-line:active { color: white; background-color: black; }
+
+.dropdown-toggle { background-color: transparent; font-size: 1.5rem; }
+.dropdown-toggle:after { display: none !important; }
 
 .nav-link { color: #383a37; }
 .nav-link:hover, .nav-link:focus, .nav-link.active { color: #9fc6e3; }

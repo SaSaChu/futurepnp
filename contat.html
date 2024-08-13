@@ -5,7 +5,7 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 
-    <title></title>
+    <title>futurepnp</title>
 
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/public.js"></script>
@@ -15,8 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/public.css">
     <link rel="stylesheet" type="text/css" href="css/icon.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <script language="javascript" type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
     
@@ -26,10 +26,10 @@
   <body>
     <!-- header -->
     <header>
-      <div class="mainBoxs">
+      <div class="container-fluid">
         <div class="row mx-auto align-items-center justify-content-between">
-          <div class="col-md-2 col-4 px-0" >
-            <img src="images/logo.png" class="img-fluid">
+          <div class="col-md-1 col-4 text-start px-0" >
+            <a href="index.html"><img src="images/logo.png" class="img-logo"></a>
           </div>
           <!-- 網頁版menu -->
           <div class="col-md-10 mobile-close">
@@ -51,33 +51,24 @@
               </li>
             </ul>
           </div>
+          <div class="col-md-1 text-end px-0 mobile-close" >
+            <div class="btn-group">
+              <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">English</a></li>
+                <li><a class="dropdown-item" href="tw/index.html">繁體中文</a></li>
+              </ul>
+            </div>
+          </div>
           <div class="col-7 px-0 mobile-open"><i class="listicon bi bi-list float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i></div>
         </div>
       </div>
     </header>
 
     <!-- 手機版menu -->
-    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-      <div class="offcanvas-header">
-        <div class="row mx-auto align-items-center justify-content-between">
-          <div class="col-4 px-0" >
-            <img src="images/logo.png" class="img-fluid">
-          </div>
-          <div class="col-3">
-           <button type="button" class="btn-close text-reset float-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-        </div>
-      </div>
-      <div class="offcanvas-body">
-        <nav class="nav flex-column">
-          <a class="nav-link mobile-link" aria-current="page" href="about.html">About</a>
-          <a class="nav-link mobile-link" href="product.html">Product</a>
-          <a class="nav-link mobile-link" href="experts.html">Experts</a>
-          <a class="nav-link mobile-link" href="careers.html">Careers</a>
-          <a class="nav-link mobile-link" href="contat.html">Contat us</a>
-        </nav>
-      </div>
-    </div>
+    <div id="mobilenav"></div>
 
     <!-- 大Banner -->
     <div class="bigbanner">
@@ -99,23 +90,33 @@
           <div class="row mx-auto px-0 py-5">
             <div class="col-md-5 col-12 text-start">
               <div class="row mx-auto h-100 align-content-between">
-                <div class="col-12">
-                  <p class="f30-black lh-sm mb-5">How can we help you?</p>
-                  <p class="f30-b-black lh-sm mb-md-5 pb-md-5 pb-0">Contact Info</p>
-                  <p class="f30-black lh-sm mb-5 pt-5">
-                    <img src="images/placeholder_286036.png" class="iconimg me-2">
-                  Rm. 7, 11F., No. 205, Sec. 1, Dunhua S. Rd., Da’an Dist., Taipei City 106446 , Taiwan (R.O.C.)
-                  </p>
-                  <p class="f30-black lh-sm mb-5">
-                    <img src="images/telephone_310158.png" class="iconimg me-2">
-                    +886-2-2721-8262
-                  </p>
-                  <p class="f30-black lh-sm mb-5">
-                    <img src="images/email_1500426.png" class="iconimg me-2">
-                    <a href="mailto:service@futurepnp.com">service@futurepnp.com</a>
-                  </p>
+                <div class="col-12 px-0">
+                  <p class="f30-black lh-sm mb-md-5 mb-3">How can we help you?</p>
+                  <p class="f34-b-black lh-sm mb-md-5 pb-5">Contact Info</p>
                 </div>
-                <div class="col-12 mb-5">
+                <div class="row mx-auto g-2">
+                  <div class="col-md-2 col-1 pe-md-5 pe-3"><img src="images/placeholder_286036.png" class="img-fluid"></div>
+                  <div class="col-md-10 col-11">
+                    <p class="f30-black lh-sm">
+                    Rm. 7, 11F., No. 205, Sec. 1, Dunhua S. Rd., Da’an Dist., Taipei City 106446 , Taiwan (R.O.C.)
+                    </p>
+                  </div>
+                  <div class="col-md-2 col-1 pe-md-5 pe-3">
+                    <img src="images/telephone_310158.png" class="img-fluid">
+                  </div>
+                  <div class="col-md-10 col-11 d-flex align-items-center">
+                    <p class="f30-black lh-sm">
+                    +886-2-2721-8262
+                    </p>
+                  </div>
+                  <div class="col-md-2 col-1 pe-md-5 pe-3"><img src="images/email_1500426.png" class="img-fluid"></div>
+                  <div class="col-md-10 col-11 d-flex align-items-center">
+                    <p class="f30-black lh-sm">
+                      <a href="mailto:service@futurepnp.com">service@futurepnp.com</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 my-5">
                   <a class='f25-black' href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Click here to read our privacy policy.</a>
                 </div>
               </div>
@@ -131,27 +132,7 @@
     </main>
 
     <!-- footer -->
-    <footer>
-      <div class="mainBoxs">
-        <div class="row mx-auto">
-          <div class="col-md-9 col-12 px-0 text-md-start text-center">
-            <img src="images/logo.png" class="footerimg mb-4">
-            <p class="f15-blue d-block">Tel：+886-2-2721-8262</p>
-            <p class="f15-blue d-block">Email：<a href="mailto:service@futurepnp.com">service@futurepnp.com</a></p>
-            <p class="f15-blue d-block">Address：Rm. 7, 11F., No 205, Sec. 1 Dunhaua S Rd., Da' an Dist., Taipei City 106446, Taiwan(R.O.C.)</p>
-          </div>
-          <div class="col-3 px-0 text-start mobile-close">
-            <nav class="nav flex-column">
-              <a class="nav-link footer-link" aria-current="page" href="about.html">About</a>
-              <a class="nav-link footer-link" href="product.html">Product</a>
-              <a class="nav-link footer-link" href="experts.htm">Experts</a>
-              <a class="nav-link footer-link" href="careers.html">Careers</a>
-              <a class="nav-link footer-link" href="contat.html">Contat us</a>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <footer></footer>
 
     <!-- 隱私條款 -->
     <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
@@ -175,7 +156,7 @@
             <li>We analyze the cookie-captured information only to help us improve our service offerings and website features.</li>
             <li>These cookies do not grant us remote access to your systems or to any confidential information you have not shared with us.</li>
             <li>We will never make any data related to your location or any other customer-centric information public.</li>
-            <li>Cookies are stored and restricted to your browser or system memory. They can be disabled by changing your browser’s settings. But turning off cookies may prevent you from obtaining the full benefits of using our website./li>
+            <li>Cookies are stored and restricted to your browser or system memory. They can be disabled by changing your browser’s settings. But turning off cookies may prevent you from obtaining the full benefits of using our website.</li>
             <li>To understand more about cookies and how they are used, visit allaboutcookies.org.</li>
           </ul>
           <p class="f20-b-blue text-start mt-5">GDPR Compliance (For Visitors to our Website from the European Union)</p>

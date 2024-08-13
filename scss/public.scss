@@ -131,7 +131,7 @@ footer {
     }
 
     .bannerTitle {
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: bolder;
       text-align: left;
       color: white;
@@ -157,6 +157,12 @@ footer {
     width: 100%;
     object-fit: cover;
   }
+}
+
+.img-logo {
+  display: inline-block;
+  width: 100%;
+  max-width: 120px;
 }
 
 .footerimg {
@@ -265,6 +271,15 @@ footer {
   }
 }
 
+.f34-b-black {
+  font-size: 2.2rem;
+  font-weight: bolder;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 1rem;
+  }
+}
+
 .f30-b-blue {
   font-size: 1.8rem;
   font-weight: bolder;
@@ -370,6 +385,15 @@ footer {
 
 
 // boo
+.dropdown-toggle {
+  background-color: transparent;
+  font-size: 1.5rem;
+
+  &:after {
+    display: none !important;
+  }
+}
+
 .nav-link {
   color: #383a37;
 

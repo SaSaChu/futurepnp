@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta http-equiv="Content-Language" content="zh-tw">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+
+    <title>futurepnp</title>
+
+    <script language="javascript" type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../js/public.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/icon.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script language="javascript" type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container-fluid">
+        <div class="row mx-auto align-items-center justify-content-between">
+          <div class="col-md-1 col-4 text-start px-0" >
+            <a href="index.html"><img src="../images/logo.png" class="img-logo"></a>
+          </div>
+          <!-- 網頁版menu -->
+          <div class="col-md-10 mobile-close">
+            <ul class="nav justify-content-start">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html">公司簡介</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">服務</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experts.html">專家</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="careers.html">職涯發展</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contat.html">聯絡我們</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-1 text-end px-0 mobile-close" >
+            <div class="btn-group">
+              <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-globe"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../index.html">English</a></li>
+                <li><a class="dropdown-item" href="index.html">繁體中文</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-7 px-0 mobile-open"><i class="listicon bi bi-list float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 手機版menu -->
+    <div id="mobilenav"></div>
+
+    <!-- 大Banner -->
+    <div class="bigbanner">
+      <div class="bannerbox top-50 start-50 translate-middle">
+        <p class="bannerTitle lh-sm">聯絡我們</p>
+      </div>
+      <picture>
+        <source srcset="../images/contat-m.png" media="(max-width: 450px)">
+        <source srcset="../images/contat-m.png" media="(max-width: 768px)">
+        <img class="bigimg" src="../images/contat.png">
+      </picture>
+    </div>
+
+    <!-- 中間內容 -->
+    <main>
+      <!-- 02 -->
+      <div class="bg-blue py-5 mb-5">
+        <div class="mainBoxs">
+          <div class="row mx-auto px-0 py-5">
+            <div class="col-md-5 col-12 text-start">
+              <div class="row mx-auto h-100 align-content-between">
+                <div class="col-12 px-0">
+                  <p class="f30-black lh-sm mb-md-5 mb-3">需要我們的幫助嗎？</p>
+                  <p class="f34-b-black lh-sm mb-md-5 pb-5">聯絡資訊</p>
+                </div>
+                <div class="row mx-auto g-2">
+                  <div class="col-md-2 col-1 pe-md-5 pe-3"><img src="../images/placeholder_286036.png" class="img-fluid"></div>
+                  <div class="col-md-10 col-11">
+                    <p class="f30-black lh-sm">
+                    台灣台北市大安區敦化南路一段205號11樓之7
+                    </p>
+                  </div>
+                  <div class="col-md-2 col-1 pe-md-5 pe-3">
+                    <img src="../images/telephone_310158.png" class="img-fluid">
+                  </div>
+                  <div class="col-md-10 col-11 d-flex align-items-center">
+                    <p class="f30-black lh-sm">
+                    +886-2-2721-8262
+                    </p>
+                  </div>
+                  <div class="col-md-2 col-1 pe-md-5 pe-3"><img src="../images/email_1500426.png" class="img-fluid"></div>
+                  <div class="col-md-10 col-11 d-flex align-items-center">
+                    <p class="f30-black lh-sm">
+                      <a href="mailto:service@futurepnp.com">service@futurepnp.com</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 my-5">
+                  <a class='f25-black' href="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">點擊此處查看隱私政策</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 col-12">
+              <div class='embed-container'>
+                <iframe src='https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7229.538251379803!2d121.54946!3d25.041908!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDAyJzMwLjkiTiAxMjHCsDMyJzU4LjEiRQ!5e0!3m2!1szh-TW!2sus!4v1723117708592!5m2!1szh-TW!2sus'  height='600' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade'></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer></footer>
+
+    <!-- 隱私條款 -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body small">
+        <div class="mainBoxs">
+          <p class="f30-b-blue pb-3">隱私政策</p>
+          <p class="f15-black lh-sm w-100 border-blue pb-4">我們致力於保護您的隱私並採取適當措施維護與我們共享的數據的機密性和隱私性。</p>
+          <p class="f20-b-blue text-start mt-5 pt-5">我們尊重您的隱私</p>
+          <ul class="text-start">
+            <li>您在網站查詢表格上提供的信息將被安全保密地存儲和處理。</li>
+            <li>您的個人詳細信息（例如您的姓名、電話和電子郵件地址）將僅用於與您就我們的產品和服務進行溝通。</li>
+            <li>未經您事先同意，您的個人信息絕不會出於營銷目的共享、出租、出售或分發給任何第三方實體。</li>
+            <li>我們採用適當的技術和流程來防止未經授權的訪問、使用和/或披露您的個人信息。</li>
+          </ul>
+          <p class="f20-b-blue text-start mt-5">利用您的信息為您提供更好的服務（Cookie）</p>
+          <ul class="text-start">
+            <li>我們的網站使用cookies 為您提供更個性化和有效的用戶體驗。</li>
+            <li>我們分析cookie捕獲的信息只是為了幫助我們改進我們的服務產品和網站功能。</li>
+            <li>這些cookies 不允許我們遠程訪問您的系統或您未與我們共享的任何機密信息。</li>
+            <li>我們絕不會公開任何與您的位置相關的數據或任何其他以客戶為甲心的信息。</li>
+            <li>Cookie 被存儲並限制在您的瀏覽器或系統內存中。可以通過更改瀏覽器的設置來禁用它們。但是關閉 cookie可能會阻止您獲得使用我們網站的全部好處。</li>
+            <li>要了解有關cookie及其使用方式的更多信息，請訪問 allapoutcookies.org。GDPR 合規性（適用於從歐盟訪問我們網站的訪問者）</li>
+            <li>您在我們網站上提供的基本身份信息（例如姓名、電子郵件地址、公司名稱、電話號碼和國家/地區）以及網絡數據（例如IP地址、系統位置和 ccokie）均被安全保密地存儲。</li>
+            <li>此信息將僅用於與客戶和落在客戶就我們的產品和服務進行溝通。</li>
+            <li>除非法律規定了更長的保留期限或出於直接相關的合法商業目的，否則我們不會將這些個人信息保留超過實現本隱私政策中定義的目的所需的時間。</li>
+            <li>您可以要求我們提供您的個人信息的副本、數據的存儲方式和位置以及存儲這些數據的目的。</li>
+          </ul>
+          <p class="f20-b-blue text-start mt-5">我們隱私政策的變更</p>
+          <ul class="text-start">
+            <li>我們將在需要時審查、更改或更新我們的隱私政策。我們將確保在我們的網站上提供我們更新的隱私政策。</li>
+          </ul>
+          <p class="f20-b-blue text-start mt-5">如何聯繫我們</p>
+          <ul class="text-start">
+            <li>如果您對我們的隱私政策有任何疑問，請聯繫我們或發送電子郵件至以下地址:<a href="mailto:service@futurepnp.com">service@futurepnp.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 外部引入js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script> 
+
+  </body>
+</html>
